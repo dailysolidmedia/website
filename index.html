@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DailySolidMedia</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+
+body{
+
+    min-height:100vh;
+
+    background:linear-gradient(-45deg,#000428,#004e92,#000428,#008cff);
+
+    background-size:400% 400%;
+
+    animation:bg 10s ease infinite;
+
+}
+
+
+
+@keyframes bg{
+
+0%{background-position:0% 50%;}
+
+50%{background-position:100% 50%;}
+
+100%{background-position:0% 50%;}
+
+}
+
+
+
+.container{
+
+    max-width:420px;
+
+    margin:auto;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+}
+
+
+
+/* Profile */
+
+.profile{
+
+    width:130px;
+
+    height:130px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#00c6ff,#0072ff);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:white;
+
+    font-size:60px;
+
+    border:4px solid rgba(255,255,255,.35);
+
+    animation:pulse 2s infinite;
+
+}
+
+
+
+@keyframes pulse{
+
+50%{
+
+transform:scale(1.08);
+
+box-shadow:0 0 55px #00e5ff;
+
+}
+
+}
+
+
+
+.name{
+
+color:white;
+
+font-size:30px;
+
+font-weight:bold;
+
+margin-top:18px;
+
+}
+
+
+
+.email{
+
+color:#ddd;
+
+margin-top:8px;
+
+}
+
+
+
+.line{
+
+width:180px;
+
+height:2px;
+
+margin:25px auto;
+
+background:#00e5ff;
+
+}
+
+
+
+/* Buttons */
+
+
+.social-btn{
+
+width:100%;
+
+max-width:320px;
+
+margin:16px auto;
+
+padding:16px;
+
+border-radius:50px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:12px;
+
+color:white;
+
+text-decoration:none;
+
+font-size:18px;
+
+font-weight:bold;
+
+transition:.3s;
+
+cursor:pointer;
+
+}
+
+
+
+.social-btn:hover{
+
+transform:scale(1.05);
+
+}
+
+
+
+.social-btn i{
+
+font-size:24px;
+
+}
+
+
+
+.instagram{
+
+background:linear-gradient(45deg,#833AB4,#FD1D1D,#FCAF45);
+
+}
+
+
+.youtube{
+
+background:linear-gradient(45deg,#ff0000,#ff4d4d);
+
+}
+
+
+.facebook{
+
+background:linear-gradient(45deg,#1877F2,#0A58CA);
+
+}
+
+
+.twitter{
+
+background:linear-gradient(45deg,#111,#444);
+
+}
+
+
+.telegram{
+
+background:linear-gradient(45deg,#229ED9,#0088CC);
+
+}
+
+
+/* Paid Promotion */
+
+.promotion{
+
+background:linear-gradient(45deg,#FFD700,#ff8c00);
+
+color:#000;
+
+}
+
+
+
+/* Popup */
+
+
+.popup{
+
+display:none;
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:rgba(0,0,0,.75);
+
+align-items:center;
+
+justify-content:center;
+
+padding:20px;
+
+z-index:999;
+
+}
+
+
+
+.card{
+
+background:white;
+
+color:#222;
+
+max-width:350px;
+
+width:100%;
+
+padding:25px;
+
+border-radius:20px;
+
+text-align:center;
+
+}
+
+
+
+.card h2{
+
+color:#004e92;
+
+margin-bottom:15px;
+
+}
+
+
+
+.card p{
+
+line-height:25px;
+
+}
+
+
+
+.close{
+
+margin-top:15px;
+
+padding:12px 30px;
+
+border:none;
+
+border-radius:30px;
+
+background:#004e92;
+
+color:white;
+
+font-weight:bold;
+
+}
+
+
+
+.footer{
+
+color:#ddd;
+
+font-size:13px;
+
+margin:30px 0;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<div class="profile">
+
+<i class="fa-solid fa-user"></i>
+
+</div>
+
+
+<div class="name">
+
+DailySolidMedia
+
+</div>
+
+
+<div class="email">
+
+<i class="fa-solid fa-envelope"></i>
+
+dailysolidmedia@gmail.com
+
+</div>
+
+
+<div class="line"></div>
+
+
+
+<a class="social-btn instagram"
+href="https://www.instagram.com/dailysolidmedia?igsh=cjN0MXRqZDVleDFk"
+target="_blank">
+
+<i class="fa-brands fa-instagram"></i>
+
+Follow on Instagram
+
+</a>
+
+
+
+<a class="social-btn youtube"
+href="https://live.oia.bio/dailysolidmedia"
+target="_blank">
+
+<i class="fa-brands fa-youtube"></i>
+
+Follow on YouTube
+
+</a>
+
+
+
+<a class="social-btn facebook"
+href="https://www.facebook.com/share/1H7jcQhxrb/"
+target="_blank">
+
+<i class="fa-brands fa-facebook-f"></i>
+
+Follow on Facebook
+
+</a>
+
+
+
+<a class="social-btn twitter"
+href="https://x.com/Dailysolidmedia"
+target="_blank">
+
+<i class="fa-brands fa-x-twitter"></i>
+
+Follow on X
+
+</a>
+
+
+
+<a class="social-btn telegram"
+href="https://t.me/dailysolidmedia"
+target="_blank">
+
+<i class="fa-brands fa-telegram"></i>
+
+Join Telegram
+
+</a>
+
+
+
+<!-- Paid Promotion Button -->
+
+<div class="social-btn promotion" onclick="openPromotion()">
+
+<i class="fa-solid fa-bullhorn"></i>
+
+Paid Promotion
+
+</div>
+
+
+
+
+<div class="footer">
+
+<p>© 2026 DailySolidMedia</p>
+
+<p style="margin-top:12px;color:#FFD700;font-weight:bold;">
+
+⚠️ इसके अलावा हमारा कहीं और कोई Official Account नहीं है।
+
+</p>
+
+
+<p>
+
+Instagram • YouTube • Facebook • X • Telegram
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+<!-- Promotion Card -->
+
+
+<div class="popup" id="promotionBox">
+
+
+<div class="card">
+
+
+<h2>
+
+🚀 Paid Promotion
+
+</h2>
+
+
+<p>
+
+अपने Brand, Business, YouTube Channel,
+Instagram Page या Product का Promotion करवाएं।
+
+<br><br>
+
+✅ Instagram Promotion
+
+<br>
+
+✅ YouTube Promotion
+
+<br>
+
+✅ Social Media Reach
+
+<br>
+
+✅ Brand Advertisement
+
+<br><br>
+
+Contact करने के लिए नीचे क्लिक करें।
+
+</p>
+
+
+
+<a class="social-btn youtube"
+href="mailto:dailysolidmedia@gmail.com?subject=Paid%20Promotion%20Inquiry&body=Hello%20DailySolidMedia,%0A%0AI%20want%20to%20know%20about%20Paid%20Promotion.%0A%0AName:%0APhone:%0ARequirement:%0A%0AThank%20you.">
+
+<i class="fa-solid fa-envelope"></i>
+
+Contact Us
+
+</a>
+
+
+
+<button class="close" onclick="closePromotion()">
+
+Close
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+<script>
+
+
+function openPromotion(){
+
+document.getElementById("promotionBox").style.display="flex";
+
+}
+
+
+function closePromotion(){
+
+document.getElementById("promotionBox").style.display="none";
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
+
